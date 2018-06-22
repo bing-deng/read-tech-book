@@ -41,11 +41,17 @@ $ 退出scrapingEvn 文件夹 引用bs4 报错
  
  * 使用bs4
  ```
- from urllib.request import urlopen
- from bs4 import BeautifulSoup
- html = urlopen('https://google.com')
- bsObj = BeautifulSoup(html.read())
- print(bsObj.h1)
+ # -*-coding:utf8-*-
+from urllib.request import urlopen
+from bs4 import BeautifulSoup
+
+html = urlopen('http://www.xueersi.com/')
+# 放到bs4 之后就打印不出来了
+print(html.read().decode('utf8'))
+bsObj = BeautifulSoup(html.read(), "html.parser")
+
+print(bsObj.h1)
+
  
  ```
  

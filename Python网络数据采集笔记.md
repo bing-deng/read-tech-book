@@ -1,4 +1,4 @@
-###Python网络数据采集
+### Python网络数据采集
 
 #### 第一章
 
@@ -17,3 +17,24 @@ html = urlopen('https://google.com')
 print(html.read())
 
 ```
+* 我们的Python 程序并没有返回并向服务器请求多个文件的逻辑，他只能读取我们已经请求的单个HTML文件。
+* urllib python 标准库，BS4不是标准库 需要自己安装
+
+##### virtualenv
+
+$ virtualenv scrapingEvn
+$ cd scrapingEnv
+$ source bin/activate
+$ pip install beautifulsoup4
+$ python ...
+$ ``from bs4 import BeautifulSoup``
+$ 退出scrapingEvn 文件夹 引用bs4 报错
+
+##### BeautifulSoup （BS4）
+
+* 安装 
+  * mac ``sudo easy_install pip``  ``pip install beautifulsoup4`` 或者 ``pip3 install beautifulsoup4``
+  * linux ``sudo apt-get install python-bs4``
+  * windows 下载源码``python setup.py install`` 或者 安装win 版本[pip](https://pypi.python.org/pypi/setuptools) 之后 ,``pip install beautifulsoup4``
+  
+ * 测试安装 ``from bs4 import BeautifulSoup``

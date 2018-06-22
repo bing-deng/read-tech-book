@@ -38,3 +38,14 @@ $ 退出scrapingEvn 文件夹 引用bs4 报错
   * windows 下载源码``python setup.py install`` 或者 安装win 版本[pip](https://pypi.python.org/pypi/setuptools) 之后 ,``pip install beautifulsoup4``
   
  * 测试安装 ``from bs4 import BeautifulSoup``
+ 
+ * 使用bs4
+ ```
+ from urllib.request import urlopen
+ from bs4 import BeautifulSoup
+ html = urlopen('https://google.com')
+ bsObj = BeautifulSoup(html.read())
+ print(bsObj.h1)
+ 
+ ```
+ 

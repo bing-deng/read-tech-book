@@ -21,7 +21,7 @@ print(html.read())
 * urllib python 标准库，BS4不是标准库 需要自己安装
 
 ##### virtualenv
-
+```
 $ virtualenv scrapingEvn
 $ cd scrapingEnv
 $ source bin/activate
@@ -29,7 +29,7 @@ $ pip install beautifulsoup4
 $ python ...
 $ ``from bs4 import BeautifulSoup``
 $ 退出scrapingEvn 文件夹 引用bs4 报错
-
+```
 ##### BeautifulSoup （BS4）
 
 * 安装 

@@ -55,3 +55,10 @@ print(bsObj.h1)
  
  ```
  
+ 
+ #### 可靠的网络连接
+ 
+ * HTTPError ,URLError,AttributeError
+ * 处理和检查html 对象十分必要
+ * 写爬虫，思考总体格局，代码捕获异常易懂。。
+ * 具有周密的异常处理功能会让稳定的网络数据采集变得简单易行

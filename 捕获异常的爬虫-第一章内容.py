@@ -13,7 +13,7 @@ def getTitle(url):
 		return None
 
 	try:
-		bs_obj = BeautifulSoup(html.read())
+		bs_obj = BeautifulSoup(html.read(),"html.parser")
 		title = bs_obj.title
 	except AttributeError as e:
 		return None
